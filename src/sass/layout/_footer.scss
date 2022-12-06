@@ -1,0 +1,31 @@
+.link {
+  text-decoration: none;
+}
+.footer__container {
+  @include mobile {
+    width: 480px;
+  }
+}
+.footer__nav {
+  display: flex;
+}
+.footer__logo-img {
+  padding-top: 60px;
+  padding-left: 20px;
+}
+.footer__menu {
+  padding-top: 64px;
+}
+.footer__menu-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer__menu-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--black);
+}
