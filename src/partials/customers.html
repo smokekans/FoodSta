@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
-    />
-    <link rel="stylesheet" href="index.css" />
+    /> -->
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -22,18 +23,36 @@
           </p>
           <div class="group">
             <div class="group1">
+              <svg width="116" height="12">
+                <use href="./images/sprite.svg#icon-stars"></use>
+              </svg>
               <p>
                 “The Best app I have used to order food in a while, so many
                 options to choose from too, I would recommend to a freind, No
                 questions asked”
               </p>
+              <div class="custom">
+                <img src="./images/customers/customer1.png" alt="Customer1" />
+                <div class="custom-name"></div>
+                <h3>Sumith Shah</h3>
+                <p>Some Dude</p>
+                </div>
+              </div>
             </div>
             <div class="group2">
+              <svg width="116" height="12">
+                <use href="./images/sprite.svg#icon-stars"></use>
+              </svg>
               <p>
                 “The ease with which I can just go in and order what i want was
                 amazing, It has been a very pleasant experience ordering from
                 this app”
               </p>
+              <div class="custom">
+                <img src="./images/customers/customer2.png" alt="Customer2" />
+                <h3>Sumith Shah</h3>
+                <p>Some Dude</p>
+              </div>
             </div>
           </div>
         </div>
