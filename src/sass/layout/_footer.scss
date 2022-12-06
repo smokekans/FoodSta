@@ -1,16 +1,11 @@
-.link {
-  text-decoration: none;
+.footer {
+  background-color: var(--bg-white);
 }
-.footer__container {
-  @include mobile {
-    width: 480px;
-  }
-}
+
 .footer__nav {
   display: flex;
 }
-.footer__logo-img {
-  width: 69px;
+.nav-link {
   padding-top: 60px;
   padding-left: 20px;
 }
