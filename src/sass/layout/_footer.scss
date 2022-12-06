@@ -1,5 +1,14 @@
 .footer {
+  padding-bottom: 60px;
   background-color: var(--bg-white);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+  background-image: url(../images/fruits/footer/footer-mobile.png);
+  @include retina-bgi {
+    background-image: url(../images/fruits/footer/footer-mobile@2x.png);
+  }
 }
 
 .footer__nav {
