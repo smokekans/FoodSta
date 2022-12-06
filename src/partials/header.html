@@ -8,10 +8,41 @@
       </a>
     </div>
 
-    <button class="mobile-menu" type="button" data-modal-open>
-      <svg class="mobile-menu__icon">
-        <use href="./images/sprite.svg#icon-menu"></use>
-      </svg>
-    </button>
+    <div class="menu-position">
+      <button class="mobile-menu" type="button" data-modal-open>
+        <svg class="mobile-menu__icon">
+          <use href="./images/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="mobile-menu-container is-hidden" data-modal>
+        <button
+          class="mobile-menu-container-button"
+          type="button"
+          data-modal-close
+        >
+          <svg class="mobile-menu-container__icon">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu-list list">
+          <li class="mobile-menu__item">
+            <a href="" class="link mobile-menu__link">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="link mobile-menu__link">About</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="link mobile-menu__link">Service</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="link mobile-menu__link">Menu</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="link mobile-menu__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </header>
