@@ -1,85 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-    <title>FoodSta</title>
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <section class="customers">
-        <div class="container">
-          <h2 class="customers__title">What our Customers Say</h2>
-          <p class="customers__desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <div class="group">
-            <div class="group1">
-              <svg class="group__icon" width="101" height="16">
-                <use href="./images/sprite.svg#icon-stars"></use>
-              </svg>
-              <p class="group__desc">
-                “The Best app I have used to order food in a while, so many
-                options to choose from too, I would recommend to a freind, No
-                questions asked”
-              </p>
-              <div class="custom">
-                <picture>
-                  <source
-                    media="(min-width:1280px)"
-                    srcset="
-                      ./images/customers/customer1.png,
-                      ./images/customers/customer1@2x.png
-                    "
-                    type="image/jpg"
-                  />
-                  <img
-                    class="custom__avatar"
-                    src="./images/customers/customer1.png"
-                    alt="Customer1"
-                  />
-                </picture>
-                <div class="custom__content">
-                  <!-- <div class="group-box"> -->
-                  <h3 class="custom__name">Sumith Shah</h3>
-                  <p class="custom__desc">Some Dude</p>
-                  <!-- </div> -->
-                </div>
-              </div>
-            </div>
-            <div class="group2">
-              <svg class="group__icon" width="101" height="16">
-                <use href="./images/sprite.svg#icon-stars"></use>
-              </svg>
-              <p class="group__desc">
-                “The ease with which I can just go in and order what i want was
-                amazing, It has been a very pleasant experience ordering from
-                this app”
-              </p>
-              <div class="custom">
-                <img
-                  class="custom__avatar"
-                  src="./images/customers/customer2.png"
-                  alt="Customer2"
-                />
-                <div class="custom__content">
-                  <h3 class="custom__name">Sumith Shah</h3>
-                  <p class="custom__desc">Some Dude</p>
-                </div>
-              </div>
-            </div>
+<section class="customers">
+  <div class="container">
+    <h2 class="customers__title">What our Customers Say</h2>
+    <p class="customers__desc">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <div class="group">
+      <div class="group1">
+        <svg class="group__icon" width="101" height="16">
+          <use href="./images/sprite.svg#icon-stars"></use>
+        </svg>
+        <p class="group__desc">
+          “The Best app I have used to order food in a while, so many options to
+          choose from too, I would recommend to a freind, No questions asked”
+        </p>
+        <div class="custom">
+          <picture>
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./images/customers/customer1.png,
+                ./images/customers/customer1@2x.png
+              "
+              type="image/jpg"
+            />
+            <img
+              class="custom__avatar"
+              src="./images/customers/customer1.png"
+              alt="Customer1"
+            />
+          </picture>
+          <div class="custom__content">
+            <!-- <div class="group-box"> -->
+            <h3 class="custom__name">Sumith Shah</h3>
+            <p class="custom__desc">Some Dude</p>
+            <!-- </div> -->
           </div>
         </div>
-      </section>
-    </main>
-    <footer></footer>
-  </body>
-</html>
+      </div>
+      <div class="group2">
+        <svg class="group__icon" width="101" height="16">
+          <use href="./images/sprite.svg#icon-stars"></use>
+        </svg>
+        <p class="group__desc">
+          “The ease with which I can just go in and order what i want was
+          amazing, It has been a very pleasant experience ordering from this
+          app”
+        </p>
+        <div class="custom">
+          <img
+            class="custom__avatar"
+            src="./images/customers/customer2.png"
+            alt="Customer2"
+          />
+          <div class="custom__content">
+            <h3 class="custom__name">Sumith Shah</h3>
+            <p class="custom__desc">Some Dude</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
