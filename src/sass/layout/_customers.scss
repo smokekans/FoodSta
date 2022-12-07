@@ -1,28 +1,18 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-
 .customers {
-    // padding-right: 20px;
-    // padding-left: 20px;
     padding-top: 60px;
     height: 544px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
-    @include desktop {
-        height: 647px;
-        // padding-right: 123px;
+
+    background-image: url(../images/background/480/bg-down-mobile.png);
+
+    @include retina-bgi {
+        background-image: url(../images/background/480/bg-down-mobile@2x.png);
     }
+
+
 
     @include tablet {
         background-image: url(../images/background/768/bg-down-tablet.png);
@@ -42,6 +32,11 @@ p {
         }
 
     }
+
+    @include desktop {
+        height: 647px;
+        // padding-right: 123px;
+    }
 }
 
 
@@ -49,26 +44,31 @@ p {
 
 
 .customers__title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
-    font-size: 42px;
-    line-height: calc(49/42);
-    color: #2C2C2C;
+    font-size: 28px;
+    line-height: calc(33/28);
     margin-bottom: 20px;
+    color: #2C2C2C;
+
+    @include tablet {
+        font-size: 42px;
+        line-height: calc(49/42);
+    }
 }
 
 .customers__desc {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(19/16);
+    font-size: 14px;
+    line-height: calc(16/14);
     color: #2C2C2C;
     margin-bottom: 32px;
+
+    @include tablet {
+        font-size: 16px;
+        line-height: calc(19/16);
+    }
 }
 
-.group {
+.respond {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,13 +83,11 @@ p {
 
 }
 
-.group__icon {
-    margin-bottom: 28px;
-}
-
-.group1 {
-    border-radius: 0 30px 30px 30px;
-    background-color: white;
+.respond__list {
+    display: flex;
+    gap: 30px;
+    // border-radius: 0 30px 30px 30px;
+    // background-color: white;
     // width: 280px;
     // height: 247px;
     // padding: 12px;
@@ -113,14 +111,18 @@ p {
 
 }
 
-.group2 {
+.respond__icon {
+    margin-bottom: 28px;
+}
+
+.respond__item {
     border-radius: 0 30px 30px 30px;
     background-color: white;
-    // width: 280px;
-    // height: 247px;
-    // padding: 8px 8px 20px;
-    // padding-right: 8px;
-    // padding-left: 8px;
+    width: 280px;
+    height: 247px;
+    padding: 8px 8px 20px;
+    padding-right: 8px;
+    padding-left: 8px;
     padding: 12px;
 
     @include desktop {
@@ -131,7 +133,7 @@ p {
 
 }
 
-.group__desc {
+.respond__desc {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
