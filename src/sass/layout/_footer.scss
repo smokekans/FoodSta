@@ -9,6 +9,9 @@
   @include retina-bgi {
     background-image: url(../images/fruits/footer/footer-mobile@2x.png);
   }
+  @include tablet {
+    padding-bottom: 100px;
+  }
 }
 
 .footer__nav {
@@ -17,16 +20,27 @@
 
 .nav-link-logo {
   padding-top: 60px;
-  padding-left: 20px;
+  @include tablet {
+    padding-top: 100px;
+  }
 }
 
 .nav-list {
   padding-top: 64px;
   margin-left: 84px;
+  @include tablet {
+    padding-top: 118px;
+    margin-left: 114px;
+    display: flex;
+  }
 }
 
 .nav-item:not(:last-child) {
   margin-bottom: 20px;
+  @include tablet {
+    margin-right: 28px;
+    margin-bottom: 0px;
+  }
 }
 
 .nav-link {
@@ -66,7 +80,10 @@
 .footer__subscribe {
   display: flex;
   flex-direction: column;
-  padding-top: 40px;
+  margin-top: 40px;
+  @include tablet {
+    display: block;
+  }
 }
 .subscribe-text {
   font-weight: 500;
@@ -103,6 +120,11 @@
   &:not(:placeholder-shown) {
     border: 0.854167px solid var(--red);
   }
+  @include tablet {
+    margin-right: 13px;
+    margin-bottom: 12px;
+    width: 279px;
+  }
 }
 
 .subscribe-button {
@@ -118,13 +140,40 @@
   &:focus {
     border: 2px solid #ffe450;
   }
+  @include tablet {
+    margin-bottom: 0px;
+  }
 }
 
 .footer__text {
+  margin-bottom: 60px;
   font-size: 10px;
   line-height: 1.2;
 
   color: var(--title-black);
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.16;
+    margin-bottom: 100px;
+  }
+}
+.footer__privacy {
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    display: flex;
+    // justify-content: flex-start;
+  }
+}
+.footer__list {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  @include tablet {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    justify-content: flex-start;
+  }
 }
 
 .privacy-link {
@@ -132,13 +181,10 @@
   line-height: 1.2;
   text-decoration-line: underline;
   color: var(--title-green);
-}
-
-.footer__privacy {
-  margin-top: 60px;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: space-between;
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .footer-text {
@@ -146,4 +192,9 @@
   line-height: 1.2;
   color: var(--title-black);
   text-align: center;
+  @include tablet {
+    font-size: 12px;
+    line-height: 1.16;
+    margin-right: auto;
+  }
 }
