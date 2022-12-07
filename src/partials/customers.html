@@ -1,3 +1,4 @@
+<!-- <div class="together"> -->
 <section class="customers container">
   <h2 class="customers__title">What our Customers Say</h2>
   <p class="customers__desc">
@@ -72,3 +73,96 @@
     </li>
   </ul>
 </section>
+
+<!-- <div class="subscribe container">
+    <div class="two">
+      <div class="two__1">
+        <img
+          class="subscribe__image"
+          srcset="
+            ./images/fruits/banana/banana-desktop.png     608w,
+            ./images/fruits/banana/banana-desktop@2x.png 1216w,
+            ./images/fruits/banana/banana-tablet.png      281w,
+            ./images/fruits/banana/banana-tablet@2x.png   562w,
+            ./images/fruits/banana/banana-mobile.png      161w,
+            ./images/fruits/banana/banana-mobile@2x.png   322w
+          "
+          sizes="(min-width: 1280px) 608px, (min-width: 768px) 281px, (min-width: 480px) 161px, 100vw"
+          alt="Banana"
+        />
+      </div>
+      <div class="two__2">
+        <div class="subscribe__flex">
+          <div class="subscribe__info">
+            <h2 class="info-title">Subscribe To Get Special Offers</h2>
+            <p class="info-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique.
+            </p>
+          </div>
+          <form class="subscribe__form">
+            <label class="form-label">
+              <input
+                class="form-input"
+                type="email"
+                name="mail"
+                placeholder="Enter your email"
+                required
+              />
+            </label>
+            <button class="form-button btn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <form class="form">
+      <h3 class="form__title">Order Form</h3>
+      <div class="form__field">
+        <label for="name" class="form__label">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form__input"
+          placeholder="Your name"
+          required
+          minlength="3"
+          maxlength="25"
+        />
+      </div>
+      <div class="form__field">
+        <label for="tel" class="form__label">Phone number</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          class="form__input"
+          placeholder="+38(0_ _) _ _ _ _ _ _ _"
+          required
+        />
+      </div>
+      <div class="form__field">
+        <label for="mail" class="form__label">E-mail</label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          class="form__input"
+          placeholder="example@gmail.com"
+          required
+        />
+      </div>
+      <button type="submit" class="btn form-btn">Send</button>
+    </form>
+    <button type="button" class="button-close" data-modal-close>
+      <svg class="button-close__icon" width="24" height="24">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
