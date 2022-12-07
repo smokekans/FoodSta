@@ -1,18 +1,31 @@
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
 .customers {
     padding-top: 60px;
+    width: 100%;
     height: 769px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
-    background-image: url(../images/background/480/bg-down-mobile.png);
+    background-image: url(../images/background/480/bg-down-mobile-mini.png);
 
     @include retina-bgi {
-        background-image: url(../images/background/480/bg-down-mobile@2x.png);
+        background-image: url(../images/background/480/bg-down-mobile-mini@2x.png);
     }
 
+    @include mobile {
+        background-image: url(../images/background/480/bg-down-mobile.png);
 
+        @include retina-bgi {
+            background-image: url(../images/background/480/bg-down-mobile@2x.png);
+        }
+
+    }
 
     @include tablet {
         height: 544px;
@@ -26,6 +39,7 @@
 
 
     @include desktop {
+        height: 647px;
         background-image: url(../images/background/1280/bg-down-desktop.png);
 
         @include retina-bgi {
@@ -34,10 +48,10 @@
 
     }
 
-    @include desktop {
-        height: 647px;
-        // padding-right: 123px;
-    }
+    // @include desktop {
+
+    //     // padding-right: 123px;
+    // }
 }
 
 
@@ -129,11 +143,13 @@
     border-radius: 0 30px 30px 30px;
     background-color: white;
     padding: 8px;
-
-    // @include mobile {
     width: 280px;
-    height: 247px;
-    // }
+    height: 228px;
+
+    @include mobile {
+        width: 280px;
+        height: 228px;
+    }
 
     @include tablet {
         width: 336px;
