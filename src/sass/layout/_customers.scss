@@ -1,6 +1,6 @@
 .customers {
     padding-top: 60px;
-    height: 544px;
+    height: 769px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -15,6 +15,7 @@
 
 
     @include tablet {
+        height: 544px;
         background-image: url(../images/background/768/bg-down-tablet.png);
 
         @include retina-bgi {
@@ -49,8 +50,10 @@
     line-height: calc(33/28);
     margin-bottom: 20px;
     color: #2C2C2C;
+    // text-align: center;
 
     @include tablet {
+        text-align: left;
         font-size: 42px;
         line-height: calc(49/42);
     }
@@ -61,8 +64,10 @@
     line-height: calc(16/14);
     color: #2C2C2C;
     margin-bottom: 32px;
+    // text-align: center;
 
     @include tablet {
+        text-align: left;
         font-size: 16px;
         line-height: calc(19/16);
     }
@@ -71,7 +76,7 @@
 .respond {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
 
     @include tablet {
         flex-direction: row;
@@ -85,7 +90,9 @@
 
 .respond__list {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
     // border-radius: 0 30px 30px 30px;
     // background-color: white;
     // width: 280px;
@@ -97,16 +104,19 @@
     // z-index: 1;
 
     @include tablet {
+        flex-direction: row;
         margin-right: 44px;
         padding: 12px;
+        gap: 32px;
     }
 
     @include desktop {
-        margin-right: 139px;
+        gap: 139px;
+        // margin-right: 139px;
         padding: 14px;
 
-        width: 501px;
-        height: 227px;
+        // width: 501px;
+        // height: 227px;
     }
 
 }
@@ -118,12 +128,21 @@
 .respond__item {
     border-radius: 0 30px 30px 30px;
     background-color: white;
+    padding: 8px;
+
+    // @include mobile {
     width: 280px;
     height: 247px;
-    padding: 8px 8px 20px;
-    padding-right: 8px;
-    padding-left: 8px;
-    padding: 12px;
+    // }
+
+    @include tablet {
+        width: 336px;
+        height: 244px;
+        padding: 8px 8px 20px;
+        // padding-right: 8px;
+        // padding-left: 8px;
+        // padding: 12px;
+    }
 
     @include desktop {
         padding: 14px;
@@ -134,33 +153,35 @@
 }
 
 .respond__desc {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: calc(21/18);
+    font-size: 16px;
+    line-height: calc(19/16);
     color: #2C2C2C;
     margin-bottom: 40px;
+
+    @include tablet {
+        font-size: 18px;
+        line-height: calc(21/18);
+    }
 }
 
-.custom {
+.visitor {
     display: flex;
+    align-items: center;
 }
 
-.custom__avatar {
+.visitor__avatar {
     margin-right: 16px;
 }
 
-.custom__content {
+.visitor__content {
     display: flex;
     flex-direction: column;
     padding-right: 15px;
     border-right: 1px solid #7EB101;
 }
 
-.custom__name {
-    font-family: 'Roboto';
-    font-style: normal;
+.visitor__name {
     font-weight: 500;
     font-size: 14px;
     line-height: calc(21/14);
@@ -168,10 +189,7 @@
     margin-bottom: 2px;
 }
 
-.custom__desc {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+.visitor__desc {
     font-size: 14px;
     line-height: calc(21/14);
     color: #2C2C2C;
