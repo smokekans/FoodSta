@@ -32,10 +32,13 @@
 
   color: var(--black);
 }
-.nav-link:hover,
-.nav-link:focus {
+.nav-link:active {
   color: var(--btn-green);
 }
+// .nav-link:hover,
+// .nav-link:focus {
+//   color: var(--btn-green);
+// }
 // .nav-link.current {
 //   position: relative;
 //   color: var(--btn-green);
