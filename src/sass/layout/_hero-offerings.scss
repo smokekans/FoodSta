@@ -1,1 +1,16 @@
-.hero-offerings {}
+.hero-offerings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 480px;
+  background-image: url(../images/background/480/bg-up-mobile.png);
+
+  @include retina-bgi {
+    background-image: url(../images/background/480/bg-up-mobile@2x.png);
+  }
+  @include mobile {
+    @include retina-bgi {
+      background-image: url(../images/background/480/bg-up-mobile@2x.png);
+    }
+  }
+}
