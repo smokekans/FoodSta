@@ -69,6 +69,8 @@
     height: 42px;
 
     border-radius: 30px;
+    border-radius: 30px;
+    border: 0.9px solid var(--yellow);
 
     @include tablet {
         width: 394px;
@@ -83,7 +85,16 @@
 
     background-color: var(--btn-green);
 
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
+        background-color: var(--yellow);
+    }
+
+    background-color: var(--btn-green);
+
+    &:hover,
+    &:focus {
         background-color: var(--yellow);
     }
 
