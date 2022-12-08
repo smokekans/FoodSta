@@ -1,52 +1,3 @@
-// .together {
-//     width: 100%;
-//     height: 769px;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//     background-image: url(../images/background/480/bg-down-mobile-mini.png);
-
-//     @include retina-bgi {
-//         background-image: url(../images/background/480/bg-down-mobile-mini@2x.png);
-//     }
-
-//     @include mobile {
-//         background-image: url(../images/background/480/bg-down-mobile.png);
-
-//         @include retina-bgi {
-//             background-image: url(../images/background/480/bg-down-mobile@2x.png);
-//         }
-
-//     }
-
-//     @include tablet {
-//         height: 544px;
-//         background-image: url(../images/background/768/bg-down-tablet.png);
-
-//         @include retina-bgi {
-//             background-image: url(../images/background/768/bg-down-tablet@2x.png);
-//         }
-
-//     }
-
-
-//     @include desktop {
-//         height: 647px;
-//         background-image: url(../images/background/1280/bg-down-desktop.png);
-
-//         @include retina-bgi {
-//             background-image: url(../images/background/1280/bg-down-desktop@2x.png);
-//         }
-
-//     }
-
-// }
-
-// .two {
-//     display: flex;
-//     flex-direction: column;
-// }
-
 .customers {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -54,7 +5,7 @@
     height: 769px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
     background-image: url(../images/background/480/bg-down-mobile-mini.png);
 
     @include retina-bgi {
