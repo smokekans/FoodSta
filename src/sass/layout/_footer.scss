@@ -94,9 +94,11 @@
 
   color: var(--black);
 
+  &.current,
   &:hover,
   &:focus {
     color: var(--btn-green);
+    text-decoration: underline;
   }
 }
 
@@ -130,7 +132,7 @@
   border-radius: 30px;
   font-size: 12px;
   line-height: 1.5;
-  // outline: none;
+  outline: transparent;
 
   &::placeholder {
     color: var(--title-grey);
@@ -161,6 +163,7 @@
   margin-left: auto;
   background: var(--white);
   border: 0.85px solid var(--title-green);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--title-black);
   &:hover,
