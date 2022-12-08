@@ -1,13 +1,25 @@
-.page-header {
-  position: absolute;
-  left: 0;
+.header {
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  height: 72px;
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 72px;
 
   background-color: var(--bg-white);
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+.header-scroll {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 48%,
+    rgba(255, 253, 242, 1) 80%,
+    rgba(232, 250, 183, 1) 96%,
+    rgba(222, 249, 157, 0.7189469537815126) 100%
+  );
 }
 .header-container {
   display: flex;
@@ -167,3 +179,7 @@
     border: 0;
   }
 }
+// .scroll {
+//   position: relative;
+//   top: 72px;
+// }
