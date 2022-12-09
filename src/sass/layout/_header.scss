@@ -261,6 +261,10 @@
     background: var(--btn-green);
     border-radius: 30px;
     border: 0;
+    &:hover,
+    &:focus {
+      background-color: var(--yellow);
+    }
   }
 }
 
