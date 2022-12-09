@@ -1,12 +1,18 @@
 .up-button {
   position: fixed;
-  bottom: 45px;
-  right: 45px;
+  bottom: 20%;
+  right: 10px;
+  @include tablet {
+    right: 30px;
+  }
+  @include desktop {
+    right: 50px;
+  }
 }
 .up-button__link {
-  position: relative;
-  top: -30px;
-  left: 0;
+  //   position: relative;
+  //   top: -30px;
+  //   left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,11 +20,11 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
-  fill: var(--btn-green);
+  fill: var(--title-green);
   &:hover,
   &:focus {
     scale: 1.2;
-    fill: var(--title-green);
-    box-shadow: rgb(77, 125, 64) 2px 0px 15px;
+    fill: var(--btn-green);
+    box-shadow: var(--btn-green) 2px 0px 15px;
   }
 }
