@@ -54,7 +54,7 @@
         font-size: 42px;
         line-height: calc(49/42);
         text-align: left;
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     @include desktop {
@@ -72,7 +72,7 @@
         text-align: left;
         font-size: 16px;
         line-height: calc(19/16);
-        margin-left: 10px;
+        margin-left: 23px;
     }
 
     @include desktop {
@@ -83,6 +83,10 @@
 .responsive {
     width: 100%;
     margin: 0 auto;
+
+    @include mobile {
+        width: 96%;
+    }
 
     @include desktop {
         width: 96%;
@@ -143,6 +147,11 @@
     @include tablet {
         font-size: 18px;
         line-height: calc(21/18);
+        width: 312px;
+    }
+
+    @include desktop {
+        width: 473px;
     }
 }
 
