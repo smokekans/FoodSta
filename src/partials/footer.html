@@ -25,32 +25,32 @@
           </li>
         </ul>
       </div>
-
-      <form class="footer__subscribe">
-        <label class="subscribe-text"
-          >Subscribe
-          <input
-            class="subscribe-input"
-            type="email"
-            name="mail"
-            placeholder="Enter your email"
-            required
-          />
-          <p class="input-error">
-            <svg class="error-icon" widht="11" height="11">
-              <use href="../src/images/sprite.svg#error"></use>
-            </svg>
-            Not a valid email address (example@email.com)
-          </p>
-        </label>
-
-        <button class="subscribe-button btn" type="submit">Subscribe</button>
-
+      <div class="footer__subscribe">
+        <p class="subscribe-subtitle">Subscribe</p>
+        <form class="footer__form">
+          <label for="mail" class="subscribe-lable">
+            <input
+              class="subscribe-input"
+              type="email"
+              name="mail"
+              placeholder="Enter your email"
+              required
+            />
+            <p class="input-error">
+              <svg class="error-icon" widht="11" height="11">
+                <use href="../src/images/sprite.svg#error"></use></svg
+              >Not a valid email address (example@email.com)
+            </p>
+          </label>
+          <div class="footer__button">
+            <button class="subscribe-button btn" type="submit">Subscribe</button>
+          </div>
+        </form>
         <p class="footer__text">
           By subscribing you agree to with our
           <a href="" class="privacy-link link">Privacy Policy</a>
         </p>
-      </form>
+      </div>
     </div>
     <div class="footer__privacy">
       <ul class="footer__list">
