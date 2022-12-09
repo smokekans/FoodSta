@@ -82,6 +82,31 @@
     border-radius: 30px;
     border: 0.9px solid var(--yellow);
 
+    background-color: var(--white);
+    font-size: 12px;
+    line-height: 1.5;
+    outline: none;
+
+    &::placeholder {
+        color: var(--title-grey);
+    }
+
+    &:required {
+        border: 0.85px solid var(--yellow);
+    }
+
+    &:not(:placeholder-shown) {
+        border: 0.85px solid red;
+    }
+  
+    &:not(:placeholder-shown):required:valid {
+        border: 0.85px solid var(--title-green);
+    }
+
+    &:not(:placeholder-shown):invalid {
+        content: '';
+    }
+
     @include tablet {
         width: 394px;
     }

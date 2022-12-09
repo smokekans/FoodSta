@@ -53,23 +53,31 @@
   position: relative;
   width: 280px;
   height: 282px;
-  border: 11px solid #ffe550;
-  border-radius: 139.658px;
+  border: 11px solid var(--yellow);
+  border-radius: 140px;
   &:hover,
   &:focus {
     border-color: var(--btn-green);
   }
+  transition-duration: 800ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 500ms;
+  &:hover,
+  &:focus {
+    rotate: 360deg;
+    scale: 1.15;
+  }
   @include tablet {
     width: 336px;
     height: 338px;
-    border: 14px solid #ffe550;
-    border-radius: 167.166px;
+    border: 14px solid var(--yellow);
+    border-radius: 168px;
   }
   @include desktop {
     width: 395px;
     height: 397px;
-    border: 16px solid #ffe550;
-    border-radius: 197.5px;
+    border: 16px solid var(--yellow);
+    border-radius: 198px;
     flex-basis: calc((100% - 2 * 32px) / 3);
   }
 }
@@ -90,6 +98,7 @@
     height: 315px;
   }
 }
+
 .favorites__item:nth-child(n + 4) {
   display: none;
   @include tablet {

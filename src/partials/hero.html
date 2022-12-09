@@ -1,11 +1,29 @@
-<section>
-  <div class="container">
-    <h1 class="title">Enjoy Your Favorite Food From Anywhere</h1>
-    <p class="subtitle">
+<section class="hero-section" id="hero">
+  <div class="container hero-container">
+    <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+    <p class="hero-subtitle">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
       varius enim in eros elementum tristique. Duis cursus, mi quis viverra
       ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
     </p>
     <button class="btn hero-btn--theme" type="button">Order Now</button>
+  </div>
+  <div class="scrol-menu">
+    <button class="scrol-menu-left">
+      <svg class="scrol__menu__icon" width="28" height="34">
+        <use href="./images/sprite.svg#icon-left"></use>
+      </svg>
+      <img
+        srcset="
+          ./images/food-hero/dish1-tablet.png      292w,
+          ./images/food-hero/dish1-tablet@2x.png   584w,
+          ./images/food-hero/dish1-desktop.png     528w,
+          ./images/food-hero/dish1-desktop@2x.png 1056w
+        "
+        sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px, 
+       100vw"
+        alt="green-apple"
+      />
+    </button>
   </div>
 </section>
