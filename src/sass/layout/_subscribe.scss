@@ -1,9 +1,16 @@
 .subscribe {
-    margin-top: -67px;
-
-
     margin-left: auto;
     margin-right: auto;
+
+    margin-top: -40px;
+
+    @include mobile {
+        margin-top: -60px;
+    }
+
+    @include tablet {
+        margin-top: -75px;
+    }
 
     @include desktop {
         display: flex;
