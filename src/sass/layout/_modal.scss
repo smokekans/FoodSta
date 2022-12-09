@@ -113,6 +113,15 @@
     border-color: #FF705D;
 }
 
+
+.footer-subscribe__input:not(:focus-within):not(:placeholder-shown):invalid+.footer-error {
+    width: 330px;
+    color: red;
+    height: 15px;
+    opacity: 1;
+    visibility: visible;
+}
+
 // .form__input:required {
 //     border-color: #f44336;
 // }
@@ -132,6 +141,14 @@
     color: var(--title-black);
 }
 
+
+// .form__input:not(:placeholder-shown):required:valid+.form-btn {
+//     border-color: #7EB101;
+// }
+
+// .form__input:not(:placeholder-shown):required:invalid+.form-btn {
+//     border-color: #FF705D;
+// }
 
 .form-btn {
     width: 106px;
