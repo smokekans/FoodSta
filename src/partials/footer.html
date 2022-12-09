@@ -17,15 +17,22 @@
       </div>
 
       <form class="footer__subscribe">
-        <p class="subscribe-text">Subscribe</p>
+        <label class="subscribe-text"
+          >Subscribe
+          <input
+            class="subscribe-input"
+            type="email"
+            name="mail"
+            placeholder="Enter your email"
+            required
+          />
+          <p class="input-error">
+            <svg class="error-icon" widht="11" height="11">
+              <use href="../src/images/sprite.svg#error"></use></svg
+            >Not a valid email address (example@email.com)
+          </p>
+        </label>
 
-        <input
-          class="subscribe-input"
-          type="email"
-          name="mail"
-          placeholder="Enter your email"
-          required
-        />
         <button class="subscribe-button btn" type="submit">Subscribe</button>
 
         <p class="footer__text">

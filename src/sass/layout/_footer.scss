@@ -2,13 +2,11 @@
   padding-bottom: 60px;
   background-color: var(--bg-white);
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-  background-image: url(../images/footer/480/orange480.png),
-    url(../images/footer/480/fruits480.png), 
+  background-image: url(../images/footer/480/orange480.png), url(../images/footer/480/fruits480.png),
     url(../images/footer/480/apple480.png);
   @include retina-bgi {
     background-image: url(../images/footer/480/orange480@2x.png),
-      url(../images/footer/480/fruits480@2x.png), 
-      url(../images/footer/480/apple480@2x.png);
+      url(../images/footer/480/fruits480@2x.png), url(../images/footer/480/apple480@2x.png);
   }
   background-repeat: no-repeat;
   background-position: 100% 10%, 66% 100%, 0 25%;
@@ -16,18 +14,14 @@
   @include tablet {
     padding-bottom: 100px;
     background-image: url(../images/footer/768/orangetop768.png),
-      url(../images/footer/768/appleright768.png), 
-      url(../images/footer/768/dropsright768.png),
-      url(../images/footer/768/appleleft768.png), 
-      url(../images/footer/768/banana768.png),
-      url(../images/footer/768/dropsleft768.png), 
-      url(../images/footer/768/orangeleft768.png);
+      url(../images/footer/768/appleright768.png), url(../images/footer/768/dropsright768.png),
+      url(../images/footer/768/appleleft768.png), url(../images/footer/768/banana768.png),
+      url(../images/footer/768/dropsleft768.png), url(../images/footer/768/orangeleft768.png);
     @include retina-bgi {
       background-image: url(../images/footer/768/orangetop768@2x.png),
         url(../images/footer/768/appleright768@2x.png),
         url(../images/footer/768/dropsright768@2x.png),
-        url(../images/footer/768/appleleft768@2x.png), 
-        url(../images/footer/768/banana768@2x.png),
+        url(../images/footer/768/appleleft768@2x.png), url(../images/footer/768/banana768@2x.png),
         url(../images/footer/768/dropsleft768@2x.png),
         url(../images/footer/768/orangeleft768@2x.png);
     }
@@ -35,12 +29,9 @@
   }
   @include desktop {
     background-image: url(../images/footer/1280/appleright1280.png),
-      url(../images/footer/1280/dropsright1280.png),
-      url(../images/footer/1280/dropscenter1280.png),
-      url(../images/footer/1280/orangecenter1280.png),
-      url(../images/footer/1280/banana1280.png), 
-      url(../images/footer/1280/appleleft1280.png),
-      url(../images/footer/1280/dropsleft1280.png),
+      url(../images/footer/1280/dropsright1280.png), url(../images/footer/1280/dropscenter1280.png),
+      url(../images/footer/1280/orangecenter1280.png), url(../images/footer/1280/banana1280.png),
+      url(../images/footer/1280/appleleft1280.png), url(../images/footer/1280/dropsleft1280.png),
       url(../images/footer/1280/orangeleft1280.png);
     @include retina-bgi {
       background-image: url(../images/footer/1280/appleright1280@2x.png),
@@ -101,7 +92,6 @@
 
   color: var(--black);
 
-  // &.current,
   &:hover,
   &:focus {
     color: var(--btn-green);
@@ -131,7 +121,7 @@
 .subscribe-input {
   padding-left: 12px;
   margin-top: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 4px;
   width: 100%;
   height: 42px;
   background-color: var(--white);
@@ -144,17 +134,26 @@
   &::placeholder {
     color: var(--title-grey);
   }
-
-  &:required {
+  &:placeholder-shown {
     border: 0.85px solid var(--yellow);
   }
-
-  &:not(:placeholder-shown):required:valid {
+  &:focus-within {
+    border: 0.85px solid var(--yellow);
+  }
+  &:valid {
     border: 0.85px solid var(--title-green);
   }
-
-  &:not(:placeholder-shown) {
+  &:focus:invalid {
     border: 0.85px solid var(--red);
+  }
+  &:not(:focus-within):not(:placeholder-shown):invalid {
+    border: 0.85px solid var(--red);
+  }
+  &:not(:focus-within):not(:placeholder-shown):invalid + .input-error {
+    width: 100%;
+    height: 15px;
+    opacity: 1;
+    visibility: visible;
   }
   @include tablet {
     margin-right: 13px;
@@ -162,7 +161,21 @@
     width: 279px;
   }
 }
-
+.input-error {
+  font-size: 10px;
+  line-height: 1.5%;
+  align-items: center;
+  color: var(--red);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1250ms linear;
+}
+.error-icon {
+  width: 11px;
+  height: 11px;
+  margin-right: 4px;
+}
 .subscribe-button {
   margin-bottom: 20px;
   width: 103px;
