@@ -1,14 +1,43 @@
-.page-header {
-  position: absolute;
-  left: 0;
+.header {
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  height: 72px;
   display: flex;
   align-items: center;
-  width: 100%;
-  height: 72px;
 
   background-color: var(--bg-white);
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
 }
+
+.header-scroll {
+  //   background: linear-gradient(
+  //     360deg,
+  //     rgba(231, 211, 99, 0.95) 0%,
+  //     rgba(199, 236, 107, 0.95) 100%
+  //   );
+  //   background: linear-gradient(
+  //     360deg,
+  //     rgba(224, 205, 98, 0.95) 0%,
+  //     rgba(179, 212, 98, 0.95) 100%
+  //   );
+  //   background: linear-gradient(
+  //     360deg,
+  //     rgba(236, 219, 125, 0.95) 0%,
+  //     rgba(181, 207, 119, 0.95) 100%
+  //   );
+  background: linear-gradient(
+    360deg,
+    rgba(196, 176, 77, 0.95) 0%,
+    rgba(165, 203, 73, 0.95) 100%
+  );
+  & .mobile-menu__icom {
+    fill: #bbf330;
+  }
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -21,10 +50,12 @@
 
 .logo {
   display: block;
+
   @include tablet {
     margin-right: auto;
   }
 }
+
 .logo__icon {
   width: 66px;
   height: 52px;
@@ -48,6 +79,7 @@
     fill: var(--yellow);
   }
 }
+
 .mobile-menu__icon {
   width: 28px;
   height: 28px;
@@ -77,7 +109,7 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu-container.is-hidden {
+.mobile-menu-container.is-open {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -98,6 +130,7 @@
   border: none;
   outline: none;
 }
+
 .mobile-menu-container__icon {
   width: 24px;
   height: 24px;
@@ -123,11 +156,13 @@
 
 .header-nav {
   display: none;
+
   @include tablet {
     display: block;
     margin-right: 30px;
   }
 }
+
 .header-nav-list {
   display: flex;
   gap: 28px;
@@ -138,16 +173,19 @@
   font-size: 14px;
   line-height: calc(16 / 14);
   color: var(--black);
+
   &.current,
   &:hover,
   &:focus {
     color: var(--btn-green);
     text-decoration: underline;
   }
+
   @include desktop {
     color: var(--title-black);
   }
 }
+
 .header-button {
   display: none;
 
@@ -167,3 +205,8 @@
     border: 0;
   }
 }
+
+// .scroll {
+//   position: relative;
+//   top: 72px;
+// }
