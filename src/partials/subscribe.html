@@ -1,4 +1,7 @@
-<div class="subscribe container">
+<section class="subscribe ">
+  <div class="container">
+    <div class="position">
+      <div class="position__image">
   <img
     class="subscribe__image"
     srcset="
@@ -12,27 +15,34 @@
     sizes="(min-width: 1280px) 608px, (min-width: 768px) 281px, (min-width: 480px) 161px, 100vw"
     alt="Banana"
   />
-  <div class="subscribe_flex">
-    <div class="subscribe__info">
-      <h2 class="info-title">Subscribe To Get Special Offers</h2>
-      <p class="info-text">
+  </div>
+      <div class="position__right">
+      <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+      <p class="subscribe-desc">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique.
       </p>
-    </div>
 
-    <form class="subscribe__form">
-      <div class="field form">
-        <div class="input-area">
-          <input type="text" placeholder="Enter your email" />
-        </div>
-        <div class="error-txt">
-          Not a valid email address (example@email.com)
-        </div>
+    <form class="subscribe-form">
+      <div class="form-button">
+
+        <div class="subscribe-form__field">
+        <label for="mail" class="subscribe-form__label"></label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          class="subscribe-form__input"
+          placeholder="Enter your email"
+          required
+        />
       </div>
-      <button class="form-button btn" type="submit" value="Login">
-        Subscribe
-      </button>
+      <button type="submit" class="btn sub-form-btn">Subscribe</button>
+      </div>
     </form>
+    </div>
   </div>
-</div>
+  </div>
+  </div>
+  </section>
+
