@@ -27,7 +27,7 @@
       <div class="form-button">
 
         <div class="subscribe-form__field">
-        <label for="mail" class="subscribe-form__label"></label>
+        <label for="mail" class="subscribe-form__label">
         <input
           type="email"
           name="mail"
@@ -36,6 +36,13 @@
           placeholder="Enter your email"
           required
         />
+        <p class="input-error">
+            <svg class="error-icon" widht="11" height="11">
+              <use href="../src/images/sprite.svg#error"></use>
+            </svg>
+            Not a valid email address (example@email.com)
+          </p>
+        </label>
       </div>
       <button type="submit" class="btn sub-form-btn">Subscribe</button>
       </div>

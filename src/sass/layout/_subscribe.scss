@@ -2,20 +2,12 @@
     padding-bottom: 60px;
     margin-top: -40px;
 
-    @include mobile {
-        margin-top: -60px;
-    }
 
     @include tablet {
         margin-top: -75px;
     }
-
-    @include desktop {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-    }
 }
+
 
 .position {
     @include desktop {
@@ -29,6 +21,7 @@
 .position__right {
     @include desktop {
         width: 656px;
+        margin-top: 20px;
     }
 }
 
@@ -71,7 +64,8 @@
     @include desktop {
         width: 608px;
         height: 266px;
-        margin-right: -55px
+        margin-right: 40px;
+        margin-bottom: 50px;
     }
 }
 
@@ -100,7 +94,6 @@
 
 .subscribe-form__input {
     padding: 12px 11px;
-    margin-bottom: 20px;
     width: 100%;
     background: var(--white);
     border: 0.85px solid var(--yellow);
@@ -143,6 +136,10 @@
         opacity: 1;
         visibility: visible;
     }
+
+    @include tablet {
+        width: 279px;
+    }
 }
 
 .input-error {
@@ -156,6 +153,12 @@
     transition: 1250ms linear;
 }
 
+.error-icon {
+    width: 11px;
+    height: 11px;
+    margin-right: 4px;
+}
+
 
 
 
@@ -163,6 +166,7 @@
     width: 106px;
     background-color: var(--white);
     border-radius: 30px;
+    margin-left: auto;
     margin-top: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 11px 22px;
@@ -172,20 +176,10 @@
     @include tablet {
         margin-top: 0;
         margin-left: 22px;
+        margin-bottom: 27px;
     }
 
-
-    &:hover,
-    &:focus {
-        background-color: var(--yellow);
+    @include desktop {
+        margin-bottom: 25px;
     }
-
-    background-color: var(--btn-green);
-
-    &:hover,
-    &:focus {
-        background-color: var(--yellow);
-    }
-
-
 }
