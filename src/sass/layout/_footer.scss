@@ -2,48 +2,55 @@
   padding-bottom: 60px;
   background-color: var(--bg-white);
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-  background-image: url(../images/footer/480/orange480@1x.png),
-    url(../images/footer/480/fruits480@1x.png), url(../images/footer/480/apple480@1x.png);
+  background-image: url(../images/footer/480/orange480.png),
+    url(../images/footer/480/fruits480.png), 
+    url(../images/footer/480/apple480.png);
   @include retina-bgi {
     background-image: url(../images/footer/480/orange480@2x.png),
-      url(../images/footer/480/fruits480@2x.png), url(../images/footer/480/apple480@2x.png);
+      url(../images/footer/480/fruits480@2x.png), 
+      url(../images/footer/480/apple480@2x.png);
   }
   background-repeat: no-repeat;
   background-position: 100% 10%, 66% 100%, 0 25%;
   background-size: initial;
   @include tablet {
     padding-bottom: 100px;
-    background-image: url(../images/footer/768/orangetop768@1x.png),
-      url(../images/footer/768/appleright768@1x.png), url(../images/footer/768/dropsright768@1x.png),
-      url(../images/footer/768/appleleft768@1x.png), url(../images/footer/768/banana768@1x.png),
-      url(../images/footer/768/dropsleft768@1x.png), url(../images/footer/768/orangeleft768@1x.png);
+    background-image: url(../images/footer/768/orangetop768.png),
+      url(../images/footer/768/appleright768.png), 
+      url(../images/footer/768/dropsright768.png),
+      url(../images/footer/768/appleleft768.png), 
+      url(../images/footer/768/banana768.png),
+      url(../images/footer/768/dropsleft768.png), 
+      url(../images/footer/768/orangeleft768.png);
     @include retina-bgi {
       background-image: url(../images/footer/768/orangetop768@2x.png),
         url(../images/footer/768/appleright768@2x.png),
         url(../images/footer/768/dropsright768@2x.png),
-        url(../images/footer/768/appleleft768@2x.png), url(../images/footer/768/banana768@2x.png),
+        url(../images/footer/768/appleleft768@2x.png), 
+        url(../images/footer/768/banana768@2x.png),
         url(../images/footer/768/dropsleft768@2x.png),
         url(../images/footer/768/orangeleft768@2x.png);
     }
     background-position: 100% 0, 100% 100%, 82% 100%, 38% 100%, 60% 100%, 22% 100%, -2% 100%;
   }
   @include desktop {
-    background-image: url(../images/footer/1280/appleright1280@1x.png),
-      url(../images/footer/1280/dropsright1280@1x.png),
-      url(../images/footer/1280/dropscenter1280@1x.png),
-      url(../images/footer/1280/orangecenter1280@1x.png),
-      url(../images/footer/1280/banana1280@1x.png), url(../images/footer/1280/appleleft1280@1x.png),
-      url(../images/footer/1280/dropsleft1280@1x.png),
-      url(../images/footer/1280/orangeleft1280@1x.png);
+    background-image: url(../images/footer/1280/appleright1280.png),
+      url(../images/footer/1280/dropsright1280.png),
+      url(../images/footer/1280/dropscenter1280.png),
+      url(../images/footer/1280/orangecenter1280.png),
+      url(../images/footer/1280/banana1280.png), 
+      url(../images/footer/1280/appleleft1280.png),
+      url(../images/footer/1280/dropsleft1280.png),
+      url(../images/footer/1280/orangeleft1280.png);
     @include retina-bgi {
       background-image: url(../images/footer/1280/appleright1280@2x.png),
         url(../images/footer/1280/dropsright1280@2x.png),
         url(../images/footer/1280/dropscenter1280@2x.png),
         url(../images/footer/1280/orangecenter1280@2x.png),
         url(../images/footer/1280/banana1280@2x.png),
-        url(../images/footer/1280/appleleft1280@1x.png),
+        url(../images/footer/1280/appleleft1280@2x.png),
         url(../images/footer/1280/dropsleft1280@2x.png),
-        url(../images/footer/1280/orangeleft1280@1x.png);
+        url(../images/footer/1280/orangeleft1280@2x.png);
     }
     background-position: 98% 100%, 87% 100%, 43% 88%, 48% 100%, 72% 100%, 27% 100%, 20% 100%,
       5% 100%;
