@@ -19,6 +19,10 @@
 }
 
 .position__right {
+    @include tablet {
+        margin-top: 20px;
+    }
+
     @include desktop {
         width: 656px;
         margin-top: 20px;
@@ -26,12 +30,18 @@
 }
 
 .subscribe-title {
-    margin-top: 17px;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 28px;
-    line-height: 1.2;
+    line-height: calc(34/28);
     align-content: start;
+
+    @include tablet {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: calc(50/42);
+        color: var(--title-black);
+    }
 }
 
 .subscribe-desc {
@@ -39,10 +49,13 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: calc(16/14);
     margin-bottom: 40px;
 
     @include tablet {
+        font-size: 16px;
+        line-height: calc(24/16);
+        color: var(--title-black);
         width: 600px;
     }
 }
@@ -65,7 +78,7 @@
         width: 608px;
         height: 266px;
         margin-right: 40px;
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
     }
 }
 
@@ -82,7 +95,7 @@
     flex-direction: row;
 }
 
-.form-button {
+.registr {
     display: flex;
     flex-direction: column;
 
@@ -98,10 +111,10 @@
     background: var(--white);
     border: 0.85px solid var(--yellow);
     border-radius: 30px;
+    outline: transparent;
 
     @include tablet {
         width: 394px;
-        margin-bottom: 0;
     }
 
     &::placeholder {
@@ -136,10 +149,6 @@
         opacity: 1;
         visibility: visible;
     }
-
-    @include tablet {
-        width: 279px;
-    }
 }
 
 .input-error {
@@ -159,27 +168,24 @@
     margin-right: 4px;
 }
 
-
-
-
 .sub-form-btn {
     width: 106px;
     background-color: var(--white);
     border-radius: 30px;
     margin-left: auto;
-    margin-top: 8px;
+    margin-top: 20px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 11px 22px;
     background-color: var(--btn-green);
     outline: transparent;
 
+    &:hover,
+    &:focus {
+        background-color: var(--yellow);
+    }
+
     @include tablet {
         margin-top: 0;
         margin-left: 22px;
-        margin-bottom: 27px;
-    }
-
-    @include desktop {
-        margin-bottom: 25px;
     }
 }
