@@ -1,20 +1,55 @@
 .footer {
   padding-bottom: 60px;
   background-color: var(--bg-white);
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
   box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
-  // background-image: url(../images/fruits/footer/footer-mobile.png);
-  // @include retina-bgi {
-  //   background-image: url(../images/fruits/footer/footer-mobile@2x.png);
-  // }
+  background-image: url(../images/footer/480/orange480@1x.png),
+    url(../images/footer/480/fruits480@1x.png), url(../images/footer/480/apple480@1x.png);
+  @include retina-bgi {
+    background-image: url(../images/footer/480/orange480@2x.png),
+      url(../images/footer/480/fruits480@2x.png), url(../images/footer/480/apple480@2x.png);
+  }
+  background-repeat: no-repeat;
+  background-position: 100% 10%, 66% 100%, 0 25%;
+  background-size: initial;
   @include tablet {
     padding-bottom: 100px;
+    background-image: url(../images/footer/768/orangetop768@1x.png),
+      url(../images/footer/768/appleright768@1x.png), url(../images/footer/768/dropsright768@1x.png),
+      url(../images/footer/768/appleleft768@1x.png), url(../images/footer/768/banana768@1x.png),
+      url(../images/footer/768/dropsleft768@1x.png), url(../images/footer/768/orangeleft768@1x.png);
+    @include retina-bgi {
+      background-image: url(../images/footer/768/orangetop768@2x.png),
+        url(../images/footer/768/appleright768@2x.png),
+        url(../images/footer/768/dropsright768@2x.png),
+        url(../images/footer/768/appleleft768@2x.png), url(../images/footer/768/banana768@2x.png),
+        url(../images/footer/768/dropsleft768@2x.png),
+        url(../images/footer/768/orangeleft768@2x.png);
+    }
+    background-position: 100% 0, 100% 100%, 82% 100%, 38% 100%, 60% 100%, 22% 100%, -2% 100%;
   }
   @include desktop {
+    background-image: url(../images/footer/1280/appleright1280@1x.png),
+      url(../images/footer/1280/dropsright1280@1x.png),
+      url(../images/footer/1280/dropscenter1280@1x.png),
+      url(../images/footer/1280/orangecenter1280@1x.png),
+      url(../images/footer/1280/banana1280@1x.png), url(../images/footer/1280/appleleft1280@1x.png),
+      url(../images/footer/1280/dropsleft1280@1x.png),
+      url(../images/footer/1280/orangeleft1280@1x.png);
+    @include retina-bgi {
+      background-image: url(../images/footer/1280/appleright1280@2x.png),
+        url(../images/footer/1280/dropsright1280@2x.png),
+        url(../images/footer/1280/dropscenter1280@2x.png),
+        url(../images/footer/1280/orangecenter1280@2x.png),
+        url(../images/footer/1280/banana1280@2x.png),
+        url(../images/footer/1280/appleleft1280@1x.png),
+        url(../images/footer/1280/dropsleft1280@2x.png),
+        url(../images/footer/1280/orangeleft1280@1x.png);
+    }
+    background-position: 98% 100%, 87% 100%, 43% 88%, 48% 100%, 72% 100%, 27% 100%, 20% 100%,
+      5% 100%;
   }
 }
+
 .footer__wrapper {
   @include desktop {
     display: flex;
@@ -59,9 +94,11 @@
 
   color: var(--black);
 
+  // &.current,
   &:hover,
   &:focus {
     color: var(--btn-green);
+    text-decoration: underline;
   }
 }
 
@@ -95,7 +132,7 @@
   border-radius: 30px;
   font-size: 12px;
   line-height: 1.5;
-  // outline: none;
+  outline: transparent;
 
   &::placeholder {
     color: var(--title-grey);
@@ -126,6 +163,7 @@
   margin-left: auto;
   background: var(--white);
   border: 0.85px solid var(--title-green);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--title-black);
   &:hover,
