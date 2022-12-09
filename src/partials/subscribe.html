@@ -20,17 +20,19 @@
         varius enim in eros elementum tristique.
       </p>
     </div>
+
     <form class="subscribe__form">
-      <label class="form-label">
-        <input
-          class="form-input"
-          type="email"
-          name="mail"
-          placeholder="Enter your email"
-          required
-        />
-      </label>
-      <button class="form-button btn" type="submit">Subscribe</button>
+      <div class="field form">
+        <div class="input-area">
+          <input type="text" placeholder="Enter your email" />
+        </div>
+        <div class="error-txt">
+          Not a valid email address (example@email.com)
+        </div>
+      </div>
+      <button class="form-button btn" type="submit" value="Login">
+        Subscribe
+      </button>
     </form>
   </div>
 </div>
