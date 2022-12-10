@@ -1,23 +1,30 @@
 .oferring-section {
+  @include tablet {
+    margin-top: -32px;
+  }
+
+  @include desktop {
+    margin-top: 0;
+  }
 }
 
 .offerings-conteiner {
   background-image: url(../images/background/480/bg-up-mobile.png);
-  background-position: bottom;
+  background-position: center;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 60px;
   padding-top: 40px;
-  height: 1050px;
+  padding-bottom: 60px;
   min-width: 320px;
 
   @include retina-bgi {
-    height: 1050px;
     background-image: url(../images/background/480/bg-up-mobile@2x.png);
   }
   @include mobile {
-    height: 1050px;
     @include retina-bgi {
       background-image: url(../images/background/480/bg-up-mobile@2x.png);
     }
@@ -26,7 +33,7 @@
   @include tablet {
     background-image: url(../images/background/768/bg-up-tablet.png);
     padding-top: 150px;
-    height: 1140px;
+    padding-bottom: 100px;
 
     @include retina-bgi {
       background-image: url(../images/background/768/bg-up-tablet@2x.png);
@@ -34,8 +41,8 @@
 
     @include desktop {
       background-image: url(../images/background/1280/bg-up-desktop.png);
-      height: 824px;
       padding-top: 177px;
+      padding-bottom: 43px;
       flex-direction: row;
       gap: 90px;
     }
@@ -45,7 +52,11 @@
   }
 }
 
-.offerings-image {
+.apple__conteiner {
+  display: flex;
+}
+
+.large__apple {
   display: block;
   margin: 0 auto;
   width: 280px;
@@ -53,13 +64,12 @@
   @include retina-bgi {
     width: 280px;
     height: 309px;
+  }
 
-    @include tablet {
-      margin-left: 32px;
-      margin-right: auto;
-      width: 357px;
-      height: 394px;
-    }
+  @include tablet {
+    margin: 0;
+    width: 357px;
+    height: 394px;
   }
 
   // margin-top: 41px;
@@ -68,8 +78,37 @@
     height: 394px;
   }
   @include desktop {
+    margin-top: 62px;
     width: 550px;
     height: 604px;
+  }
+}
+
+.medium__apple {
+  display: none;
+  @include tablet {
+    display: block;
+    margin-top: 130px;
+    margin-left: 29px;
+    width: 166px;
+    height: 211px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.soft__apple {
+  display: none;
+  @include tablet {
+    display: block;
+    width: 108px;
+    height: 136px;
+    margin-top: 190px;
+    margin-left: 44px;
+  }
+  @include desktop {
+    display: none;
   }
 }
 
@@ -77,6 +116,13 @@
   font-size: 27px;
   line-height: calc(33 / 27);
   margin-bottom: 28px;
+  color: var(--title-black);
+
+  @include tablet {
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    width: 529px;
+  }
 
   @include desktop {
     margin-bottom: 20px;
@@ -89,6 +135,13 @@
   font-size: 14px;
   line-height: 150%;
   margin-bottom: 28px;
+  color: var(--title-black);
+
+  @include tablet {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    max-width: 500px;
+  }
 
   @include desktop {
     font-size: 16px;
@@ -97,9 +150,25 @@
 }
 
 .service-menu__list {
-  padding-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+  @include tablet {
+    gap: 116px;
+    flex-direction: row;
+  }
   @include desktop {
-    width: 50%;
+    gap: 67px;
+    margin-bottom: 32px;
+  }
+}
+
+.service__menu__item {
+  @include tablet {
+    width: 252px;
+  }
+  @include desktop {
+    width: 253px;
   }
 }
 
@@ -107,15 +176,26 @@
   font-size: 18px;
   line-height: calc(21 / 18);
   margin-bottom: 16px;
+  color: var(--title-black);
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 140%;
+  }
 }
 
 .service-subtitle {
+  color: var(--title-black);
   font-size: 14px;
   line-height: calc(16 / 14);
 
   @include tablet {
     font-size: 16px;
     line-height: calc(19 / 16);
+  }
+  @include desktop {
+    font-size: 14px;
+    line-height: 150%;
   }
 }
 
@@ -129,6 +209,12 @@
   border-radius: 50%;
   border: transparent;
   margin-bottom: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--title-green);
+  }
 }
 
 .border--theme {
@@ -137,6 +223,10 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 150%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include desktop {
+    margin-bottom: 57px;
+  }
   &:hover,
   &:focus {
     background-color: var(--btn-green);
