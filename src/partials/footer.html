@@ -30,17 +30,18 @@
         <form class="footer__form">
           <label for="mail" class="subscribe-lable">
             <input
+              id="mail"
               class="subscribe-input"
               type="email"
               name="mail"
               placeholder="Enter your email"
               required
             />
-            <p class="input-error">
-              <svg class="error-icon" widht="11" height="11">
+            <span class="input-error">
+              <svg class="error-icon">
                 <use href="../src/images/sprite.svg#error"></use></svg
               >Not a valid email address (example@email.com)
-            </p>
+            </span>
           </label>
           <div class="footer__button">
             <button class="subscribe-button btn" type="submit">Subscribe</button>

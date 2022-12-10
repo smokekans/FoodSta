@@ -137,7 +137,6 @@
 .subscribe-input {
   padding: 12px;
   width: 100%;
-  // height: 42px;
   background-color: var(--white);
   color: var(--title-black);
 
@@ -155,6 +154,9 @@
   &:focus-within {
     border: 0.85px solid var(--yellow);
   }
+  &:focus:placeholder-shown:invalid {
+    border-color: var(--yellow);
+  }
   &:valid {
     border: 0.85px solid var(--title-green);
   }
@@ -171,10 +173,11 @@
     visibility: visible;
   }
 }
+
 .input-error {
   display: flex;
   position: absolute;
-  width: 330px;
+  max-width: 330px;
   align-items: center;
   gap: 5px;
   margin-top: 5px;
