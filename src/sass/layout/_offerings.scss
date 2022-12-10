@@ -156,7 +156,9 @@
 .service-menu__list {
   display: flex;
   flex-direction: column;
+  gap: 28px;
   margin-bottom: 28px;
+
   @include tablet {
     gap: 116px;
     flex-direction: row;
