@@ -1,8 +1,9 @@
 <section class="oferring-section" id="about">
   <div class="container offerings-conteiner">
-    <img
-      class="offerings-image"
-      srcset="
+    <div class="apple__conteiner">
+      <img
+        class="large__apple"
+        srcset="
         ./images/fruits/hero-apple/apple-mobile-280.png       280w,
         ./images/fruits/hero-apple/apple-mobile-560@2x.png    560w,
         ./images/fruits/hero-apple/apple-tablet-357.png       357w,
@@ -10,9 +11,28 @@
         ./images/fruits/hero-apple/apple-desctop-550.png      550w
         ./images/fruits/hero-apple/apple-desctop-1100@2x.png  1100w
         "
-      sizes="(min-width: 1280px) 550px, (min-width: 768px) 704px, (min-width: 320px) 280px, 100vw"
-      alt="green-apple"
-    />
+        sizes="(min-width: 1280px) 550px, (min-width: 768px) 704px, (min-width: 320px) 280px, 100vw"
+        alt="green-apple"
+      />
+      <img
+        class="medium__apple"
+        srcset="
+          ./images/fruits/hero-apple/medium-apple-166.png 166w,
+          ./images/fruits/hero-apple/medium-apple@2x.png  332w
+        "
+        sizes=" (min-width: 768px) 166px, 100vw"
+        alt="green-apple"
+      />
+      <img
+        class="soft__apple"
+        srcset="
+          ./images/fruits/hero-apple/soft-apple.png    108w,
+          ./images/fruits/hero-apple/soft-apple@2x.png 216w
+        "
+        sizes=" (min-width: 768px) 108px, 100vw"
+        alt="green-apple"
+      />
+    </div>
     <div class="about-conteiner">
       <h2 class="title">What’s Special About Our Offerings</h2>
       <p class="subtitle">
@@ -22,31 +42,25 @@
       </p>
       <div class="service-menu"></div>
       <ul class="service-menu__list">
-        <li>
+        <li class="service__menu__item">
           <button class="button__servis__icon" type="button">
             <svg width="32" height="32">
               <use href="./images/sprite.svg#icon-rocket"></use>
             </svg>
           </button>
-        </li>
-        <li><h3 class="service-title">Fasest Delivery</h3></li>
-        <li>
+          <h3 class="service-title">Fasest Delivery</h3>
           <p class="service-subtitle">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros.
           </p>
         </li>
-      </ul>
-      <ul class="service-menu__list">
-        <li>
+        <li class="service__menu__item">
           <button class="button__servis__icon" type="button">
             <svg width="32" height="32">
               <use href="./images/sprite.svg#icon-touch"></use>
             </svg>
           </button>
-        </li>
-        <li class="service-title"><h3>Easy to order</h3></li>
-        <li>
+          <h3 class="service-title">Easy to order</h3>
           <p class="service-subtitle">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             varius enim in eros.
