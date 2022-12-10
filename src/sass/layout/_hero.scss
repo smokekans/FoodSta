@@ -23,12 +23,14 @@
   line-height: calc(33 / 27);
   margin-bottom: 28px;
   color: var(--title-black);
+
   @include tablet {
     width: 537px;
     font-size: 42px;
     line-height: 120%;
     margin-bottom: 44px;
   }
+
   @include desktop {
     width: 502px;
     font-size: 48px;
@@ -41,12 +43,14 @@
   line-height: 150%;
   margin-bottom: 28px;
   color: varle(--title-black);
+
   @include tablet {
     width: 336px;
     font-size: 16px;
     width: 336px;
     margin-bottom: 40px;
   }
+
   @include desktop {
     width: 502px;
     font-size: 16px;
@@ -70,7 +74,8 @@
 }
 
 .scrol-menu {
-  display: none;
+  // display: none;
+
   @include tablet {
     display: flex;
     gap: 30px;
@@ -82,6 +87,7 @@
     top: 149px;
     right: 32px;
   }
+
   @include desktop {
     border: 26px solid var(--yellow);
     width: 580px;
@@ -91,11 +97,12 @@
   }
 }
 
-.scrol__menu__img {
+.scrol-menu__img {
   position: absolute;
   display: block;
   top: 163px;
   right: 54px;
+
   @include desktop {
     width: 528px;
     height: 528px;
@@ -104,6 +111,6 @@
   }
 }
 
-.dish-2 {
-  display: none;
-}
+// .dish-2 {
+//   // display: none;
+// }

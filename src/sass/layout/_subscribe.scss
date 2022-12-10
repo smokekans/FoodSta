@@ -149,6 +149,10 @@
         opacity: 1;
         visibility: visible;
     }
+
+    &:focus:placeholder-shown:invalid {
+        border-color: var(--yellow);
+    }
 }
 
 .input-error {
