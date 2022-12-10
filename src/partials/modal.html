@@ -3,39 +3,61 @@
     <form class="form">
       <h3 class="form__title">Order Form</h3>
       <div class="form__field">
-        <label for="name" class="form__label">Name</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          class="form__input"
-          placeholder="Your name"
-          required
-          minlength="3"
-          maxlength="25"
-        />
+        <label class="form__label"
+          >Name
+          <input
+            type="text"
+            name="name"
+            class="form__input"
+            placeholder="Your name"
+            required
+            minlength="3"
+            maxlength="25"
+          />
+          <p class="input-error">
+            <svg class="error-icon" widht="11" height="11">
+              <use href="../src/images/sprite.svg#error"></use>
+            </svg>
+            Not a valid email address (example@email.com)
+          </p>
+        </label>
       </div>
       <div class="form__field">
-        <label for="tel" class="form__label">Phone number</label>
-        <input
-          type="tel"
-          name="tel"
-          id="tel"
-          class="form__input"
-          placeholder="+38(0_ _) _ _ _ _ _ _ _"
-          required
-        />
+        <label class="form__label"
+          >Phone number
+          <input
+            type="tel"
+            name="tel"
+            class="form__input"
+            placeholder="+38(0_ _) _ _ _ _ _ _ _"
+            pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            required
+          />
+          <p class="input-error">
+            <svg class="error-icon" widht="11" height="11">
+              <use href="../src/images/sprite.svg#error"></use>
+            </svg>
+            Not a valid email address (example@email.com)
+          </p>
+        </label>
       </div>
       <div class="form__field">
-        <label for="mail" class="form__label">E-mail</label>
-        <input
-          type="email"
-          name="mail"
-          id="mail"
-          class="form__input"
-          placeholder="example@gmail.com"
-          required
-        />
+        <label class="form__label"
+          >E-mail
+          <input
+            type="email"
+            name="mail"
+            class="form__input"
+            placeholder="example@gmail.com"
+            required
+          />
+          <p class="input-error">
+            <svg class="error-icon" widht="11" height="11">
+              <use href="../src/images/sprite.svg#error"></use>
+            </svg>
+            Not a valid email address (example@email.com)
+          </p>
+        </label>
       </div>
       <button type="submit" class="btn form-btn">Send</button>
     </form>

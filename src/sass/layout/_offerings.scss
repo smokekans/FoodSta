@@ -24,6 +24,7 @@
   @include retina-bgi {
     background-image: url(../images/background/480/bg-up-mobile@2x.png);
   }
+
   @include mobile {
     @include retina-bgi {
       background-image: url(../images/background/480/bg-up-mobile@2x.png);
@@ -46,6 +47,7 @@
       flex-direction: row;
       gap: 90px;
     }
+
     @include retina-bgi {
       background-image: url(../images/background/1280/bg-up-desktop@2x.png);
     }
@@ -61,6 +63,7 @@
   margin: 0 auto;
   width: 280px;
   height: 309px;
+
   @include retina-bgi {
     width: 280px;
     height: 309px;
@@ -77,6 +80,7 @@
     width: 357px;
     height: 394px;
   }
+
   @include desktop {
     margin-top: 62px;
     width: 550px;
@@ -239,6 +243,7 @@
   line-height: 150%;
   background-color: transparent;
   border: transparent;
+
   @include desktop {
     display: none;
   }
@@ -258,6 +263,7 @@
 .about-conteiner {
   display: flex;
   flex-wrap: wrap;
+
   @include desktop {
     padding-top: 143px;
   }
