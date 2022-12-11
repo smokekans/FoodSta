@@ -7,6 +7,7 @@
   @include retina-bgi {
     background-image: url(../images/background/480/bg-up-mobile@2x.png);
   }
+
   @include mobile {
     @include retina-bgi {
       background-image: url(../images/background/480/bg-up-mobile@2x.png);
@@ -40,10 +41,12 @@
   padding-top: 40px;
   padding-bottom: 60px;
   min-width: 320px;
+
   @include tablet {
     padding-top: 150px;
     padding-bottom: 100px;
   }
+
   @include desktop {
     padding-top: 177px;
     padding-bottom: 43px;
@@ -88,6 +91,7 @@
 
 .medium__apple {
   display: none;
+
   @include tablet {
     display: block;
     margin-top: 130px;
@@ -95,6 +99,7 @@
     width: 166px;
     height: 211px;
   }
+
   @include desktop {
     display: none;
   }
@@ -102,6 +107,7 @@
 
 .soft__apple {
   display: none;
+
   @include tablet {
     display: block;
     width: 108px;
@@ -109,6 +115,7 @@
     margin-top: 190px;
     margin-left: 44px;
   }
+
   @include desktop {
     display: none;
   }
@@ -161,16 +168,18 @@
     gap: 116px;
     flex-direction: row;
   }
+
   @include desktop {
     gap: 67px;
     margin-bottom: 32px;
   }
 }
 
-.service__menu__item {
+.service-menu__item {
   @include tablet {
     width: 252px;
   }
+
   @include desktop {
     width: 253px;
   }
@@ -197,13 +206,14 @@
     font-size: 16px;
     line-height: calc(19 / 16);
   }
+
   @include desktop {
     font-size: 14px;
     line-height: 150%;
   }
 }
 
-.button__servis__icon {
+.button-servis__icon {
   width: 48px;
   height: 48px;
   display: flex;
@@ -228,9 +238,11 @@
   font-size: 13px;
   line-height: 150%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @include desktop {
     margin-bottom: 57px;
   }
+
   &:hover,
   &:focus {
     background-color: var(--btn-green);
@@ -247,6 +259,7 @@
   @include desktop {
     display: none;
   }
+
   &:hover,
   &:focus {
     color: var(--title-green);
