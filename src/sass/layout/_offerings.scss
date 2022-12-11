@@ -247,6 +247,11 @@
   @include desktop {
     display: none;
   }
+  &:hover,
+  &:focus {
+    color: var(--title-green);
+    fill: var(--title-green);
+  }
 }
 
 .title--theme__icon {

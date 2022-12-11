@@ -74,10 +74,11 @@
 }
 
 .scrol-menu {
-  // display: none;
+  display: none;
 
   @include tablet {
     display: flex;
+
     gap: 30px;
     position: absolute;
     border: 14px solid var(--yellow);
@@ -110,7 +111,3 @@
     right: 45px;
   }
 }
-
-// .dish-2 {
-//   // display: none;
-// }
