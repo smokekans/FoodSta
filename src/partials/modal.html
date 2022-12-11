@@ -1,4 +1,4 @@
-<div class="backdrop is-hidden" data-modal>
+<!-- <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <form class="form">
       <h3 class="form__title">Order Form</h3>
@@ -14,12 +14,12 @@
             minlength="3"
             maxlength="25"
           />
-          <span class="input-error">
-            <svg class="error-icon">
+          <span class="input-error__modal">
+            <svg class="error-icon__modal">
               <use href="../src/images/sprite.svg#error"></use>
             </svg>
-            Not a valid email address (example@email.com)
-          </і>
+            The name must be between 3 and 25 characters
+          </span>
         </label>
       </div>
       <div class="form__field">
@@ -33,11 +33,11 @@
             pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
             required
           />
-          <span class="input-error">
-            <svg class="error-icon">
+          <span class="input-error__modal">
+            <svg class="error-icon__modal">
               <use href="../src/images/sprite.svg#error"></use>
             </svg>
-            Not a valid email address (example@email.com)
+            This phone must be in the format 099 000 00 00
           </span>
         </label>
       </div>
@@ -51,15 +51,16 @@
             placeholder="example@gmail.com"
             required
           />
-          <span class="input-error">
-            <svg class="error-icon">
+          <span class="input-error__modal">
+            <svg class="error-icon__modal">
               <use href="../src/images/sprite.svg#error"></use>
             </svg>
-            Not a valid email address (example@email.com)
+            Please enter a valid email address
           </span>
         </label>
       </div>
       <button type="submit" class="btn form-btn">Send</button>
+      <button type="reset" class="btn form-btn btn-reset">Reset</button>
     </form>
     <button type="button" class="button-close" data-modal-close>
       <svg class="button-close__icon" width="24" height="24">
@@ -67,4 +68,4 @@
       </svg>
     </button>
   </div>
-</div>
+</div> -->

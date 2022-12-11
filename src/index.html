@@ -35,6 +35,77 @@
     <include src="./partials/footer.html"></include>
     <include src="./partials/up-button.html"></include>
     <include src="./partials/modal.html"></include>
+    <div class="backdrop js-overlay-modal">
+      <div class="modal modal1" data-modal="1">
+        <form class="form">
+          <h3 class="form__title">Order Form</h3>
+          <div class="form__field">
+            <label class="form__label"
+              >Name
+              <input
+                type="text"
+                name="name"
+                class="form__input"
+                placeholder="Your name"
+                required
+                minlength="3"
+                maxlength="25"
+              />
+              <span class="input-error__modal">
+                <svg class="error-icon__modal">
+                  <use href="../src/images/sprite.svg#error"></use>
+                </svg>
+                The name must be between 3 and 25 characters
+              </span>
+            </label>
+          </div>
+          <div class="form__field">
+            <label class="form__label"
+              >Phone number
+              <input
+                type="tel"
+                name="tel"
+                class="form__input"
+                placeholder="+38(0_ _) _ _ _ _ _ _ _"
+                pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+                required
+              />
+              <span class="input-error__modal">
+                <svg class="error-icon__modal">
+                  <use href="../src/images/sprite.svg#error"></use>
+                </svg>
+                This phone must be in the format 099 000 00 00
+              </span>
+            </label>
+          </div>
+          <div class="form__field">
+            <label class="form__label"
+              >E-mail
+              <input
+                type="email"
+                name="mail"
+                class="form__input"
+                placeholder="example@gmail.com"
+                required
+              />
+              <span class="input-error__modal">
+                <svg class="error-icon__modal">
+                  <use href="../src/images/sprite.svg#error"></use>
+                </svg>
+                Please enter a valid email address
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="btn form-btn">Send</button>
+          <button type="reset" class="btn form-btn btn-reset">Reset</button>
+        </form>
+        <button type="button" class="button-close js-modal-close">
+          <svg class="button-close__icon" width="24" height="24">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
