@@ -96,7 +96,7 @@
 .respond__list {
     display: flex;
     align-items: center;
-    overflow: hidden;
+    // overflow: hidden;
 
     @include tablet {
         flex-direction: row;
