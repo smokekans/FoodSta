@@ -76,7 +76,6 @@
     height: 394px;
   }
 
-  // margin-top: 41px;
   @include tablet {
     width: 357px;
     height: 394px;
@@ -172,16 +171,6 @@
   @include desktop {
     gap: 67px;
     margin-bottom: 32px;
-  }
-}
-
-.service-menu__item {
-  @include tablet {
-    width: 252px;
-  }
-
-  @include desktop {
-    width: 253px;
   }
 }
 
