@@ -16,7 +16,6 @@
 
   @include tablet {
     background-image: url(../images/background/768/bg-up-tablet.png);
-    margin-top: -32px;
 
     @include retina-bgi {
       background-image: url(../images/background/768/bg-up-tablet@2x.png);
@@ -25,7 +24,6 @@
 
   @include desktop {
     background-image: url(../images/background/1280/bg-up-desktop.png);
-    margin-top: 0;
 
     @include retina-bgi {
       background-image: url(../images/background/1280/bg-up-desktop@2x.png);
